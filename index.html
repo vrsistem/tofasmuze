@@ -138,9 +138,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/muze.data.br",
-                    frameworkUrl: "Build/muze.framework.js.br",
-                    codeUrl: "Build/muze.wasm.br",
+                    dataUrl: "Build/muze.data",
+                    frameworkUrl: "Build/muze.framework.js",
+                    codeUrl: "Build/muze.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "VRSİstem",
                     productName: "Tofas Muze",
@@ -161,7 +161,7 @@
                 loadingBar.style.display = "block";
             }
             //Set Facing Mode here ('environment', 'user', '')
-            window.unityFacingMode = "environment";
+		window.unityFacingMode = "environment"
 
             window.WEBCAM_SETTINGS = {
                 video: {
